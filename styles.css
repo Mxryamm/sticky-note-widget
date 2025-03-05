@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #f8c8dc, #f5a9b8);
+}
+
+.container {
+    background-color: rgba(255, 219, 225, 0.838); /* Soft pink */
+    padding: 20px;
+    border-radius: 20px; /* This makes the edges rounded */
+    width: 280px;
+    height: 300px; /* Ensure proper height */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    -webkit-app-region: drag; /* Makes the whole widget draggable */
+}
+
+
+.header {
+    cursor: grab;
+    -webkit-app-region: drag; /* Allows dragging in Electron */
+    user-select: none; /* Prevents accidental text selection */
+}
+
+/* Prevent buttons from interfering with dragging */
+button, input {
+    -webkit-app-region: no-drag;
+}
+
+
+.count {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+li label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+button.delete {
+    background: none;
+    border: none;
+    color: #e57373;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.delete:hover {
+    color: #d32f2f;
+}
+
+.input-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    background: #b03a48;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background: #3b6396;
+}
