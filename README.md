@@ -1,5 +1,5 @@
 # -Pastel-Sticky-Note-Widget
-A cute sticky note widget built with Electron.js. It stays on top of your screen, lets you add tasks, check them off, move the widget around, and resize it!
+A sticky note widget built with Electron.js. It stays on top of your screen, lets you add tasks, check them off, move the widget around, and resize it!
 📂 How to Install & Run
 Step 1: Install Node.js & npm
 Make sure you have Node.js installed. 
